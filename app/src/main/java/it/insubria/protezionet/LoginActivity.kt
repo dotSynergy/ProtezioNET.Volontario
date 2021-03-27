@@ -3,7 +3,7 @@ package it.insubria.protezionet
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     val TITOLO = "ProtezioNET"
 
@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         // commit 2
 
+        // Commit 3
 
     }
 }
