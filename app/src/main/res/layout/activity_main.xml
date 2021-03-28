@@ -11,23 +11,24 @@
         android:id="@+id/textView6"
         android:layout_width="397dp"
         android:layout_height="124dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
         android:text="@string/Welcome_it"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintBottom_toTopOf="@+id/UsernameField"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/PasswordField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
         android:ems="10"
         android:hint="@string/Password_it"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/Copyright"
+        app:layout_constraintBottom_toTopOf="@+id/LogInButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UsernameField" />
@@ -49,37 +50,40 @@
         android:id="@+id/Copyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="20dp"
         android:text="@string/Copyright_it"
-        app:layout_constraintBottom_toTopOf="@+id/University"
+        app:layout_constraintBottom_toTopOf="@+id/Authors"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordField" />
+        app:layout_constraintTop_toBottomOf="@+id/LogInButton" />
 
     <TextView
         android:id="@+id/Authors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
         android:text="@string/Authors"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/University"
-        app:layout_constraintVertical_bias="0.652"
+        app:layout_constraintTop_toBottomOf="@+id/Copyright"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/University"
+    <Button
+        android:id="@+id/LogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="@string/Insubria"
-        app:layout_constraintBottom_toTopOf="@+id/Authors"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="89dp"
+        android:onClick="checkLogin"
+        android:text="Log In"
+        app:layout_constraintBottom_toTopOf="@+id/Copyright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Copyright" />
+        app:layout_constraintTop_toBottomOf="@+id/PasswordField" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    //id 'kotlin-android-extensions' il plugin Kotlin synthetics è stato deprecato
+    id 'kotlin-android-extensions' //il plugin Kotlin synthetics è stato deprecato
 }
 
 android {
@@ -18,9 +18,9 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         //codice aggiunto per usufruire di Android Jetpack per effettuare il binding tra il riferimento nel codice dell'Activity agli oggetti delle viste e gli oggetti delle viste tramite il loro ID
-        buildFeatures {                       // binding di view: https://developer.android.com/topic/libraries/view-binding
-            viewBinding true                  // https://developer.android.com/topic/libraries/view-binding/migration
-        }
+        //buildFeatures {                       // binding di view: https://developer.android.com/topic/libraries/view-binding
+        //    viewBinding true                  // https://developer.android.com/topic/libraries/view-binding/migration
+        //}
     }
 
     buildTypes {
