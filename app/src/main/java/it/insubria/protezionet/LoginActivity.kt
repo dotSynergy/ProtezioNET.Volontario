@@ -3,20 +3,22 @@ package it.insubria.protezionet
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-//import it.insubria.protezionet.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.regex.Pattern
 
-// Pagina principale dell'app con il Login, associato a activity_main.xml
-
 /**
  *
- *  Entry point dell'app (finestra di login)
+ * Entry point dell'app (finestra di login),  associato
+ * ad activity_main.xml
  *
- **/
+ * - checklogin()
+ * - isValidPassword()
+ * - ]isValidUsername()
+ */
 class LoginActivity : AppCompatActivity() {
 
-    val TITOLO = "ProtezioNET Admin"
+    // val TITOLO = "ProtezioNET"  -G:  teniamo come esempio commentato perchè potrebbe essere utile
+    //                                  nelle altre Activity
 
     //private lateinit var binding: ActivityMainBinding
 
@@ -26,9 +28,7 @@ class LoginActivity : AppCompatActivity() {
         //val view = binding.root
         setContentView(R.layout.activity_main)
 
-
-
-        title = TITOLO
+        // title = TITOLO
     }
 
     fun checkLogin(v: View){
