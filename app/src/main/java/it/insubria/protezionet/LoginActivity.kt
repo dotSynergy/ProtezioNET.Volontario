@@ -5,7 +5,7 @@ import android.os.Bundle
 
 class LoginActivity : AppCompatActivity() {
 
-    val TITOLO = "ProtezioNET"
+    val TITOLO = "ProtezioNET Admin"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
