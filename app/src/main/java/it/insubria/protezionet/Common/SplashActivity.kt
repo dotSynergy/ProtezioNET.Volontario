@@ -7,17 +7,14 @@ import android.os.Handler
 import it.insubria.protezionet.R
 
 /**
- * Activity utilizzata per la visualizzazione dello splash screen prima di entrare nell'activity di login
+ * Activity utilizzata per visualizzare lo splash screen prima di entrare nell'activity di login
  *
- * per ulteriori informazioni sulla realizzazione visionare i seguenti link:
- *  https://italiancoders.it/splash-screen-in-android-impariamo-a-crearle-nel-modo-corretto/
- *  https://informaticabrutta.it/launch-splash-screen-android/
  */
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        Handler().postDelayed(  //todo Handler è deprecato ma non saprei cosa utilizzare altrimenti
+        Handler().postDelayed(
                 {
                     // Terminati i 3 secondi di attesa verrà lanciata l'activity
                     // principale e terminata quella di launch
@@ -28,3 +25,9 @@ class SplashActivity : AppCompatActivity() {
         )
     }
 }
+
+
+
+// per ulteriori informazioni sulla realizzazione visionare i seguenti link:
+// https://italiancoders.it/splash-screen-in-android-impariamo-a-crearle-nel-modo-corretto/
+// https://informaticabrutta.it/launch-splash-screen-android/
