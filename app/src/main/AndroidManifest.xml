@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProtezioNET">
-        <activity android:name=".admin.SplashActivity"
+        <activity android:name=".Common.SplashActivity"
                   android:theme="@style/SplashTheme">  <!-- aggiunta dell'activity SplshActivity per lo splash screen nell'android manifest -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".admin.ActivityAdmin1" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Common.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

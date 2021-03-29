@@ -1,11 +1,9 @@
-package it.insubria.protezionet.admin
+package it.insubria.protezionet.Common
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import androidx.core.os.HandlerCompat.postDelayed
-import it.insubria.protezionet.LoginActivity
 import it.insubria.protezionet.R
 
 /**

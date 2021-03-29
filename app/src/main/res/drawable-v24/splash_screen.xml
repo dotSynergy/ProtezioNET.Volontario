@@ -4,10 +4,11 @@
     <item android:drawable="@color/sfondoSlpashScreen"/> <!--viene scelto il background del tema-->
 
 
-    <!-- Rispetto al centro (android:gravity=”center”) andremo a visualizzare il logo della nostra applicazione con un margine inferiore di 150dp-->
-    <item android:bottom="150dp"
-        android:height="300dp"
-        android:width="300dp"
+    <!-- Rispetto al centro (android:gravity=”center”) andremo a visualizzare il logo della nostra applicazione con un margine inferiore di 150dp e superiore di 30dp-->
+    <item android:top="30dp"
+        android:bottom="150dp"
+        android:height="330dp"
+        android:width="330dp"
         android:gravity="center"
-        android:drawable="@drawable/protezionet"/>
+        android:drawable="@drawable/protezionet_splash"/>  <!-- modificando questo elemento si modifica l'immagine visualizzata nello splash screen-->
 </layer-list>

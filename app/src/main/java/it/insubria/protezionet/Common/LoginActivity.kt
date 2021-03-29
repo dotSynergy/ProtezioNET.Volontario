@@ -1,8 +1,9 @@
-package it.insubria.protezionet
+package it.insubria.protezionet.Common
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import it.insubria.protezionet.R
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.regex.Pattern
 
