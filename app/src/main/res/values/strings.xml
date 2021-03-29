@@ -2,8 +2,8 @@
     <string name="app_name">ProtezioNET</string>
 
     <string name="Welcome_it">
-        <b>Benvenuti in ProtezionNET.</b>
-        <br>La migliore App per gestire i volontari della Protezione Civile.</br>
+        <b>Benvenuti in ProtezionNET.\n</b>
+        <br>La migliore App di gestione volontari per Protezione Civile</br>
     </string>
 
     <string name="Username_it">Inserisci il nome utente</string>
@@ -14,11 +14,10 @@
 
     <string name="Insubria">Università Insubria</string>>
 
-    <string name="Authors"><b>Barella Samuele,</b> MultiDeveloper Man
-                            <b>Casalnovo Giacomo,</b> Modern Symphonic Metal Man
-                            <b>Coricciato Domenico,</b> Silent Man
-                            <b>Dubini Emanuele,</b> Money Man
+    <string name="Authors"><b> Barella Samuele,</b> MultiDeveloper Man\n
+                           <b>Casalnovo Giacomo,</b> Modern Symphonic Metal Man\n
+                           <b>Coricciato Domenico,</b> Silent Man\n
+                           <b>Dubini Emanuele,</b> Money Man
     </string>
-    >
 
 </resources>

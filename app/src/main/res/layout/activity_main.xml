@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="318dp"
-        android:layout_height="51dp"
+        android:layout_width="366dp"
+        android:layout_height="50dp"
         android:text="@string/Welcome_it"
         app:layout_constraintBottom_toTopOf="@+id/UsernameField"
         app:layout_constraintHorizontal_bias="0.494"
@@ -72,8 +72,8 @@
 
     <TextView
         android:id="@+id/Authors"
-        android:layout_width="354dp"
-        android:layout_height="51dp"
+        android:layout_width="360dp"
+        android:layout_height="68dp"
         android:text="@string/Authors"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
