@@ -5,11 +5,12 @@
     android:id="@+id/informazioni"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="8dp"
     tools:context=".Common.LoginActivity">
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="366dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="@string/Welcome_it"
         app:layout_constraintBottom_toTopOf="@+id/UsernameField"
@@ -20,7 +21,7 @@
 
     <EditText
         android:id="@+id/UsernameField"
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
@@ -34,7 +35,7 @@
 
     <EditText
         android:id="@+id/PasswordField"
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/Password_it"
@@ -49,14 +50,12 @@
         android:id="@+id/LogInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="159dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="159dp"
         android:onClick="checkLogin"
         android:text="Log In"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PasswordField" />
 
@@ -72,7 +71,7 @@
 
     <TextView
         android:id="@+id/Authors"
-        android:layout_width="360dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         android:text="@string/Authors"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,7 +83,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="351dp"
+        android:layout_width="wrap_content"
         android:layout_height="148dp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +93,7 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="120dp"
+        android:layout_width="wrap_content"
         android:layout_height="119dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/Copyright"

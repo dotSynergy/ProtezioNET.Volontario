@@ -2,8 +2,8 @@
     <string name="app_name">ProtezioNET</string>
 
     <string name="Welcome_it">
-        <b>Benvenuti in ProtezionNET.\n</b>
-        <br>La migliore App di gestione volontari per Protezione Civile</br>
+        <b><center>Benvenuti in ProtezionNET.\n</center></b>
+        <br><center>La migliore App di gestione volontari\n per Protezione Civile</center></br>
     </string>
 
     <string name="Username_it">Inserisci il nome utente</string>

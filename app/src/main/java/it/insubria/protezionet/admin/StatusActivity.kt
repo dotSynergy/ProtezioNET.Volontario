@@ -9,9 +9,9 @@ import it.insubria.protezionet.R
  *  Prima Activity visualizzata dopo il Login
  *
  **/
-class ActivityAdmin1 : AppCompatActivity() {
+class StatusActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_admin1)
+        setContentView(R.layout.activity_status)
     }
 }
