@@ -3,7 +3,7 @@
 Applicazione mobile per la gestione delle attività dei volontari della Protezione Civile.
 
 1) Amministratore / coordinatore:
-=================================
+-=================================
 - creare utenti (impiegati [per rispondere e assegnare le chiamate], volontari, altri amministratori [capi-squadra, capi-zona, ecc])
 - creare, gestire, comunicare con le squadre
 - vedere in real-time gli operatori su una mappa
