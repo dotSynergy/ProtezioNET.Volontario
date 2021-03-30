@@ -11,7 +11,7 @@ Applicazione mobile per la gestione delle attività dei volontari della Protezio
 - quantificare la gravità dell'emergenza
 - Registrare risorse (mezzi [targhe, modello, ecc], attrezzature [data acquisto, usura, disponibilità])
 
-
+----------------------------------------------
 
 2) Volontario:
 
