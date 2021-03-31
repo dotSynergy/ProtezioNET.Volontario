@@ -4,6 +4,8 @@ plugins {
     id 'kotlin-android-extensions' //il plugin Kotlin synthetics è stato deprecato
 }
 
+apply plugin: 'com.google.gms.google-services' // aggiunto per la conf. di FireBase
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -14,7 +16,6 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         //codice aggiunto per usufruire di Android Jetpack per effettuare il binding tra il riferimento nel codice dell'Activity agli oggetti delle viste e gli oggetti delle viste tramite il loro ID
@@ -45,6 +46,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation platform('com.google.firebase:firebase-bom:26.8.0') // aggiunto per conf. FireBAse
+    implementation 'com.google.firebase:firebase-analytics-ktx' // aggiunto per conf. Google Analytics
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
