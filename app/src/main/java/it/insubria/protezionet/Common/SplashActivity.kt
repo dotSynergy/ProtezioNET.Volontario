@@ -8,7 +8,6 @@ import it.insubria.protezionet.R
 
 /**
  * Activity utilizzata per visualizzare lo splash screen prima di entrare nell'activity di login
- *
  */
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,9 +24,3 @@ class SplashActivity : AppCompatActivity() {
         )
     }
 }
-
-
-
-// per ulteriori informazioni sulla realizzazione visionare i seguenti link:
-// https://italiancoders.it/splash-screen-in-android-impariamo-a-crearle-nel-modo-corretto/
-// https://informaticabrutta.it/launch-splash-screen-android/
