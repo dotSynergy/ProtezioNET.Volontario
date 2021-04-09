@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="it.insubria.protezionet">
+    package="it.insubria.protezionet.admin">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProtezioNET">
-        <activity android:name=".Common.SplashActivity"
+        <activity android:name="it.insubria.protezionet.Common.SplashActivity"
                   android:theme="@style/SplashTheme">  <!-- aggiunta dell'activity SplshActivity per lo splash screen nell'android manifest -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,8 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".admin.StatusActivity" />
-        <activity android:name=".Common.LoginActivity">
+        <activity android:name="StatusActivity" />
+        <activity android:name="it.insubria.protezionet.Common.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
