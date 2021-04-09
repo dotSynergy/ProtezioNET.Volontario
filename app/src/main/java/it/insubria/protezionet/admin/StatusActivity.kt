@@ -3,7 +3,6 @@ package it.insubria.protezionet.admin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.database.DataSnapshot
-import it.insubria.protezionet.R
 
 /**
  *

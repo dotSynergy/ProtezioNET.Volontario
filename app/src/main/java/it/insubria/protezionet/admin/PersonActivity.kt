@@ -3,7 +3,6 @@ package it.insubria.protezionet.admin
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import it.insubria.protezionet.R
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.regex.Pattern
 
