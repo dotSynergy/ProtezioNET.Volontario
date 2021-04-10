@@ -2,7 +2,7 @@
 
 Applicazione mobile per la gestione delle attività dei volontari della Protezione Civile.
 
-1) Amministratore / coordinatore:
+1) Amministratore / coordinatore: https://github.com/LordAcid666/ProtezioNET
 
 - creare utenti (impiegati [per rispondere e assegnare le chiamate], volontari, altri amministratori [capi-squadra, capi-zona, ecc])
 - creare, gestire, comunicare con le squadre
@@ -13,10 +13,15 @@ Applicazione mobile per la gestione delle attività dei volontari della Protezio
 
 ----------------------------------------------
 
-2) Volontario:
+2) Volontario: https://github.com/dotSynergy/ProtezioNET.Volontario
 
 - comunicare la propria disponibilità, se chiamato
 - possibilità di accettare o meno l'intervento
 - comunicare la propria posizione in real-time durante una chiamata
 - comunicare con la propria squadra
 - ricevere le notifiche degli interventi a cui si è assegnati
+
+----------------------------------------------
+
+Common Class: https://github.com/LordAcid666/ProtezionetCommon
+Coomon Resources: https://github.com/LordAcid666/ProtezionetCommonRes
