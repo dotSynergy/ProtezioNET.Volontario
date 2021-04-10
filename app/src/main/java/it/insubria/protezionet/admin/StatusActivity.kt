@@ -15,5 +15,6 @@ class StatusActivity : AppCompatActivity() {
         setContentView(R.layout.activity_status)
     }
 
+// PRIMA PAGINA
 
 }
