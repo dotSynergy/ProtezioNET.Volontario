@@ -24,4 +24,5 @@ Applicazione mobile per la gestione delle attività dei volontari della Protezio
 ----------------------------------------------
 
 Common Class: https://github.com/LordAcid666/ProtezionetCommon
-Coomon Resources: https://github.com/LordAcid666/ProtezionetCommonRes
+
+Common Resources: https://github.com/LordAcid666/ProtezionetCommonRes
