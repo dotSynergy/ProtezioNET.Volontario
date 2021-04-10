@@ -1,8 +1,7 @@
 # ProtezioNET
 
 App mobile per la gestione delle attività dei volontari della Protezione Civile.
-
-
+-
 1) AMMINISTRATORE: https://github.com/LordAcid666/ProtezioNET
 
 - creare utenti (impiegati [per rispondere e assegnare le chiamate], volontari, altri amministratori [capi-squadra, capi-zona, ecc])
