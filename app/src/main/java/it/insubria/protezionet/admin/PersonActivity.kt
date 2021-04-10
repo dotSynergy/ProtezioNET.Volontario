@@ -56,5 +56,6 @@ class PersonActivity : AppCompatActivity() {
         val pattern = Pattern.compile(emailPattern)
         val matcher = pattern.matcher(email)
         return matcher.matches()  //se l'indirizzo email soddisfa la reg-ex ritornerà un valore true altrimenti false
+
     }
 }
