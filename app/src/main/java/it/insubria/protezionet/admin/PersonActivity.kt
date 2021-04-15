@@ -13,7 +13,7 @@ import java.util.regex.Pattern
  **/
 class PersonActivity : AppCompatActivity() {
 
-    val TITOLO = "REGISTRAZIONE UTENTI"
+    private val TITOLO = "REGISTRAZIONE UTENTI"
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -26,14 +26,14 @@ class PersonActivity : AppCompatActivity() {
         val email: String = UsernameField.text.toString()  //binding.UsernameField.text.toString()    //editTextUsername.getText().toString()
         println("email inserita:$email") //stampa di debug
         if(!isValidEmail(email)){
-            UsernameField.error = "Invalid Email"       //binding.UsernameField.error = "Invalid Email"                    //editTextUsername.setError("Invalid email")
+            UsernameField.error = resources.getText(R.string.Username_it)       //binding.UsernameField.error = "Invalid Email"                    //editTextUsername.setError("Invalid email")
         }
 
         val password = PasswordField.text.toString()   //binding.PasswordField.text.toString()                             //editTextPassword.getText().toString()
         if(!isValidPassword(password)){
             println("password inserita:$password") //stampa di debug
 
-            PasswordField.error = "Invalid Password"   //binding.PasswordField.error = "Invalid Password"                 //editTextUsername.setError("Invalid Password")
+            PasswordField.error = resources.getText(R.string.Invalid_Password)   //binding.PasswordField.error = "Invalid Password"                 //editTextUsername.setError("Invalid Password")
         }
 
         if(isValidEmail(email) && isValidPassword(password)){
