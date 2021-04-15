@@ -26,6 +26,7 @@ class PersonActivity : AppCompatActivity() {
         val email: String = UsernameField.text.toString()  //binding.UsernameField.text.toString()    //editTextUsername.getText().toString()
         println("email inserita:$email") //stampa di debug
         if(!isValidEmail(email)){
+            //todo stampa l'errore sempre in iglese e non stampa in italiano
             UsernameField.error = resources.getText(R.string.Username_it)       //binding.UsernameField.error = "Invalid Email"                    //editTextUsername.setError("Invalid email")
         }
 
@@ -33,6 +34,7 @@ class PersonActivity : AppCompatActivity() {
         if(!isValidPassword(password)){
             println("password inserita:$password") //stampa di debug
 
+            //todo stampa l'errore sempre in iglese e non stampa in italiano
             PasswordField.error = resources.getText(R.string.Invalid_Password)   //binding.PasswordField.error = "Invalid Password"                 //editTextUsername.setError("Invalid Password")
         }
 
