@@ -9,15 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProtezioNET">
-        <activity android:name="it.insubria.protezionet.Common.SplashActivity"
-                  android:theme="@style/SplashTheme">  <!-- aggiunta dell'activity SplshActivity per lo splash screen nell'android manifest -->
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name="it.insubria.protezionet.Common.SplashActivity"
+            android:theme="@style/SplashTheme"> <!-- aggiunta dell'activity SplshActivity per lo splash screen nell'android manifest -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="StatusActivity" />
+        <activity android:name=".StatusActivity" />
         <activity android:name="it.insubria.protezionet.Common.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

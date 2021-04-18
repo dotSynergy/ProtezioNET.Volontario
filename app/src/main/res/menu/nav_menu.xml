@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_24"
+        android:title="Home"
+        app:cnb_iconColor="#2196F3"
+        />
+
+    <item
+        android:id="@+id/nav_person"
+        android:icon="@drawable/ic_person_24"
+        android:title="Person"
+        app:cnb_iconColor="#F44336"/>
+
+    <item
+        android:id="@+id/nav_event"
+        android:icon="@drawable/ic_event_24"
+        android:title="Profile"
+        app:cnb_iconColor="#4CAF50"/>
+
+    <item
+        android:id="@+id/nav_truck"
+        android:icon="@drawable/ic_truck_24"
+        android:title="Truck"
+        app:cnb_iconColor="#FF9800"/>
+
+    <item
+        android:id="@+id/nav_equipment"
+        android:icon="@drawable/ic_equipment_24"
+        android:title="Equipment"
+        app:cnb_iconColor="#AEEA00"/>
+
+</menu>
