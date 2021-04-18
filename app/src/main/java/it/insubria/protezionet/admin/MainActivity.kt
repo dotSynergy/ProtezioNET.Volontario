@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNavBar.setOnItemSelectedListener {
             when (it) {
-                R.id.nav_home -> binding.textMain.text = "Near"
-                R.id.nav_person -> binding.textMain.text = "Chat"
+                R.id.nav_home -> binding.textMain.text = "Home"
+                R.id.nav_person -> binding.textMain.text = "Person"
                 R.id.nav_event -> {
                     binding.textMain.text = "event"
                     //binding.bottomNavBar.showBadge(R.id.nav_settings)
