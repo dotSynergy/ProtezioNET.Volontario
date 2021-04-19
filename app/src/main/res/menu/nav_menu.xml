@@ -4,32 +4,32 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_home_24"
-        android:title="Home"
+        android:title="@string/home_bottom_bar"
         app:cnb_iconColor="#2196F3"
         />
 
     <item
         android:id="@+id/nav_person"
         android:icon="@drawable/ic_person_24"
-        android:title="Person"
+        android:title="@string/person_bottom_bar"
         app:cnb_iconColor="#F44336"/>
 
     <item
         android:id="@+id/nav_event"
         android:icon="@drawable/ic_event_24"
-        android:title="Event"
+        android:title="@string/event_bottom_bar"
         app:cnb_iconColor="#4CAF50"/>
 
     <item
         android:id="@+id/nav_truck"
         android:icon="@drawable/ic_truck_24"
-        android:title="Truck"
+        android:title="@string/truck_bottom_bar"
         app:cnb_iconColor="#FF9800"/>
 
     <item
         android:id="@+id/nav_equipment"
         android:icon="@drawable/ic_equipment_24"
-        android:title="Equipment"
+        android:title="@string/equipment_bottom_bar"
         app:cnb_iconColor="#AEEA00"/>
 
 </menu>
