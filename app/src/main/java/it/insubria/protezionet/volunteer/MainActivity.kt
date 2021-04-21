@@ -1,9 +1,9 @@
-package it.insubria.protezionet.admin
+package it.insubria.protezionet.volunteer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
-import it.insubria.protezionet.admin.databinding.ActivityMainBinding
+import it.insubria.protezionet.volunteer.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

@@ -1,8 +1,7 @@
-package it.insubria.protezionet.admin
+package it.insubria.protezionet.volunteer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.firebase.database.DataSnapshot
 
 /**
  *

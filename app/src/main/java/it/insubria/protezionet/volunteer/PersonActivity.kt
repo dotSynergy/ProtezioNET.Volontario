@@ -1,10 +1,9 @@
-package it.insubria.protezionet.admin
+package it.insubria.protezionet.volunteer
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_main.*
 import java.util.regex.Pattern
 
 /**
