@@ -1,0 +1,7 @@
+[submodule "app/src/main/common-res"] 
+	path = app/src/main/common-res
+	url = https://github.com/LordAcid666/ProtezionetCommonRes
+
+[submodule "app/src/main/java/it/insubria/protezionet/common"]
+	path = app/src/main/java/it/insubria/protezionet/common
+	url = https://github.com/LordAcid666/ProtezionetCommon
