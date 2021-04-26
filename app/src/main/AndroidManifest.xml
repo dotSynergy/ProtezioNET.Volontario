@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProtezioNET">
-        <activity android:name="it.insubria.protezionet.volunteer.MainActivity"></activity>
+        <activity
+            android:name=".NotificationFragment"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/Theme.ProtezioNET.NoActionBar"></activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme"> <!-- aggiunta dell'activity SplshActivity per lo splash screen nell'android manifest -->
@@ -19,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="it.insubria.protezionet.volunteer.StatusActivity" />
+        <activity android:name=".StatusActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
