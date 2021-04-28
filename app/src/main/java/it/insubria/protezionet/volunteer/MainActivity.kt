@@ -3,40 +3,42 @@ package it.insubria.protezionet.volunteer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.fragment.app.Fragment
+import com.ismaeldivita.chipnavigation.ChipNavigationBar
 import it.insubria.protezionet.volunteer.databinding.ActivityMainBinding
+import it.insubria.protezionet.volunteer.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+
+    private lateinit var chipNavigationBar: ChipNavigationBar
+    private var fragment: Fragment? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        chipNavigationBar = findViewById(R.id.bottom_nav_bar)
 
-        setUpTabBar()
-    }
+        chipNavigationBar.setItemSelected(R.id.nav_home, true)
+        supportFragmentManager.beginTransaction().replace(R.id.container, HomeFragment()).commit()
 
-    private fun setUpTabBar() {
+        chipNavigationBar.setOnItemSelectedListener(object : ChipNavigationBar.OnItemSelectedListener {
 
-        binding.bottomNavBar.setOnItemSelectedListener {
-            when (it) {
-                R.id.nav_home -> binding.textMain.text = "Home"
-                R.id.nav_person -> binding.textMain.text = "Person"
-                R.id.nav_event -> {
-                    binding.textMain.text = "event"
-                    //binding.bottomNavBar.showBadge(R.id.nav_settings)
+            override fun onItemSelected(i: Int) {
+                when (i) {
+                    R.id.nav_home -> fragment = HomeFragment()
+                    //R.id.nav_person -> fragment = PersonFragment()
+                    //R.id.nav_event -> fragment = EventFragment()
+                    //R.id.nav_truck -> fragment = TruckFragment()
+                    //R.id.nav_equipment -> fragment = EquipmentFragment()
                 }
-                R.id.nav_truck -> {
-                    binding.textMain.text = "Truck"
-                    //binding.bottomNavBar.dismissBadge(R.id.nav_settings)
-                }
-                R.id.nav_equipment -> {
-                    binding.textMain.text = "equipment"
-                    //binding.bottomNavBar.dismissBadge(R.id.nav_settings)
+                if (fragment != null) {
+                    supportFragmentManager.beginTransaction().replace(R.id.container, fragment!!).commit()
                 }
             }
-        }
+        })
+
+
     }
 }

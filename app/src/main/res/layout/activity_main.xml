@@ -8,15 +8,6 @@
     android:background="#EEEEEE"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Welcome!"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
-
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/bottom_nav_bar"
         android:layout_width="match_parent"
@@ -26,5 +17,11 @@
         android:fadingEdge="horizontal"
         android:background="@color/white"
         app:cnb_menuResource="@menu/nav_menu" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav_bar" />
 
 </RelativeLayout>
