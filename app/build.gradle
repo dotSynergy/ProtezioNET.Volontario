@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions' //il plugin Kotlin synthetics è stato deprecato
+    id 'com.google.secrets_gradle_plugin' version '0.5'
+
 }
 
 apply plugin: 'com.google.gms.google-services' // aggiunto per la conf. di FireBase
@@ -66,6 +68,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
     implementation 'com.google.firebase:firebase-messaging:21.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
     // aggiunto per conf. Google Analytics
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
