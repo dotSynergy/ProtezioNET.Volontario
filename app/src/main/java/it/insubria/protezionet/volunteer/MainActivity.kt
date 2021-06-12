@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelected(i: Int) {
                 when (i) {
                     R.id.nav_home -> fragment = HomeFragment()
-                    //R.id.nav_person -> fragment = PersonFragment()
+                    R.id.nav_person -> fragment = SecondFragment()
                     //R.id.nav_event -> fragment = EventFragment()
                     //R.id.nav_truck -> fragment = TruckFragment()
                     //R.id.nav_equipment -> fragment = EquipmentFragment()

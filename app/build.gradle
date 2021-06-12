@@ -20,6 +20,10 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
+        manifestPlaceholders = [
+                MAPS_API_KEY: 'xxxx'
+        ]
+
         //codice aggiunto per usufruire di Android Jetpack per effettuare il binding tra il riferimento nel codice dell'Activity agli oggetti delle viste e gli oggetti delle viste tramite il loro ID
         //buildFeatures {                       // binding di view: https://developer.android.com/topic/libraries/view-binding
         //    viewBinding true                  // https://developer.android.com/topic/libraries/view-binding/migration

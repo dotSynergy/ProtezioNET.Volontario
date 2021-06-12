@@ -43,8 +43,8 @@
             android:theme="@style/Theme.ProtezioNET.NoActionBar" />
         <activity android:name=".MainActivity" />
         <activity
-            android:name=".SplashActivity"
-            android:theme="@style/SplashTheme"> <!-- aggiunta dell'activity SplshActivity per lo splash screen nell'android manifest -->
+            android:name=".SplashActivity">
+            <!--android:theme="@style/SplashTheme"> aggiunta dell'activity SplshActivity per lo splash screen nell'android manifest -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,7 +60,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="it.insubria.protezionet.common.MyFirebaseMessagingService">
+        <service android:name="it.insubria.protezionet.volunteer.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
