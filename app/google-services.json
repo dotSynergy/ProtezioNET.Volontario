@@ -37,9 +37,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:357296515763:android:09c02924f3c1f274ae9ec6",
+        "mobilesdk_app_id": "1:357296515763:android:661d8d96e8afa570ae9ec6",
         "android_client_info": {
-          "package_name": "it.uninsubria.protezionetv"
+          "package_name": "it.insubria.protezionetv"
         }
       },
       "oauth_client": [

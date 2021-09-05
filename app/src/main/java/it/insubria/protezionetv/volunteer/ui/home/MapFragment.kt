@@ -1,4 +1,4 @@
-package it.insubria.protezionet.volunteer.ui.home
+package it.insubria.protezionetv.volunteer.ui.home
 
 import android.content.Context
 import android.content.Intent
@@ -6,14 +6,14 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import it.insubria.protezionetv.volunteer.R
 import androidx.fragment.app.Fragment
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.*
-import it.insubria.protezionet.volunteer.R
+import com.google.android.gms.maps.model.LatLng
 import java.util.*
 
 class MapFragment : Fragment(), OnMapReadyCallback {

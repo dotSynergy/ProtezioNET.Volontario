@@ -1,4 +1,4 @@
-package it.insubria.protezionet
+package it.insubria.protezionetv
 
 import org.junit.Test
 

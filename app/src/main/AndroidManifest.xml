@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="it.insubria.protezionet.volunteer">
+    package="it.insubria.protezionetv.volunteer">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -35,9 +35,6 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".ui.home.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
-        <activity
             android:name=".NotificationFragment"
             android:label="@string/title_activity_notification"
             android:theme="@style/Theme.ProtezioNET.NoActionBar" />
@@ -60,7 +57,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="it.insubria.protezionet.volunteer.MyFirebaseMessagingService">
+        <service android:name="it.insubria.protezionetv.volunteer.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

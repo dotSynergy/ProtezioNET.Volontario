@@ -1,4 +1,4 @@
-package it.insubria.protezionet.volunteer
+package it.insubria.protezionetv.volunteer
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton

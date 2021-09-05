@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="it.insubria.protezionet.volunteer.ui.home.MapFragment"
+    tools:context="it.insubria.protezionetv.volunteer.ui.home.MapFragment"
     android:id="@+id/fragment_map"
     android:background="@color/transparent"
     >

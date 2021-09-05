@@ -6,7 +6,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fragment_event"
-    tools:context="it.insubria.protezionet.volunteer.ui.home.HomeFragment">
+    tools:context="it.insubria.protezionetv.volunteer.ui.home.HomeFragment">
 
     <LinearLayout
         android:layout_margin="4dp"

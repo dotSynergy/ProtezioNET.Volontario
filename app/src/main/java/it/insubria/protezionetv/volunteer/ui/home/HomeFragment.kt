@@ -1,4 +1,4 @@
-package it.insubria.protezionet.volunteer.ui.home
+package it.insubria.protezionetv.volunteer.ui.home
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -9,11 +9,11 @@ import android.view.*
 import android.widget.*
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
-import it.insubria.protezionet.Common.Event
-import it.insubria.protezionet.volunteer.R
+import it.insubria.protezionetv.common.Event
+import it.insubria.protezionetv.volunteer.R
 import org.json.JSONObject
 import java.util.*
-import it.insubria.protezionet.volunteer.ui.home.MapFragment as HomeMapFragment
+import it.insubria.protezionetv.volunteer.ui.home.MapFragment as HomeMapFragment
 
 
 class HomeFragment : Fragment() {

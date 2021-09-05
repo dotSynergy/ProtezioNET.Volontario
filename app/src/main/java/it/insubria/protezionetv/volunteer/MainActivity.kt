@@ -1,12 +1,11 @@
-package it.insubria.protezionet.volunteer
+package it.insubria.protezionetv.volunteer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.ismaeldivita.chipnavigation.ChipNavigationBar
-import it.insubria.protezionet.volunteer.databinding.ActivityMainBinding
-import it.insubria.protezionet.volunteer.ui.home.HomeFragment
+import it.insubria.protezionetv.volunteer.ui.home.HomeFragment
+import it.insubria.protezionetv.volunteer.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        chipNavigationBar = findViewById(R.id.bottom_nav_bar)
+        chipNavigationBar = findViewById(R.id.chipNavigation)
 
         chipNavigationBar.setItemSelected(R.id.nav_home, true)
         supportFragmentManager.beginTransaction().replace(R.id.container, HomeFragment()).commit()

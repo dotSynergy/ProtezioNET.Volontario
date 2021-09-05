@@ -1,4 +1,4 @@
-package it.insubria.protezionet.volunteer
+package it.insubria.protezionetv.volunteer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
