@@ -9,7 +9,7 @@ import android.view.*
 import android.widget.*
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
-import it.insubria.protezionetv.common.Event
+import it.insubria.protezionet.common.Event
 import it.insubria.protezionetv.volunteer.R
 import org.json.JSONObject
 import java.util.*
