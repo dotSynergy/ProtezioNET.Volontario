@@ -1,15 +1,19 @@
-package it.insubria.protezionetv.volunteer
+package it.insubria.protezionetv.volunteer.ui.person
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.fragment.app.Fragment
+import it.insubria.protezionetv.volunteer.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
 import it.insubria.protezionet.common.Person
+import it.insubria.protezionet.common.Team
 import kotlinx.android.synthetic.main.fragment_person.*
 
 
@@ -24,6 +28,13 @@ class PersonFragment : Fragment() {
     private lateinit var user: FirebaseUser
     //istanza utilizzata per ottenere un riferimento al nodo del database da cui leggere
     private lateinit var reference: DatabaseReference
+    //istanza utilizzata per ottenere un riferimento al nodo del database delle squadre da cui leggere
+    private lateinit var squadsReference: DatabaseReference
+
+    private lateinit var currentUser: Person
+
+    private lateinit var teamsAdapter: ArrayAdapter<String>
+
 
     private lateinit var userID: String
 
@@ -37,7 +48,7 @@ class PersonFragment : Fragment() {
         user = FirebaseAuth.getInstance().currentUser!!
         reference = FirebaseDatabase.getInstance().getReference("person") //rifermento al nodo person da cui leggere
         userID = user.uid
-        Toast.makeText(activity, "test "+user.uid, Toast.LENGTH_LONG).show()
+
         // Inflate the layout for this fragment
         //preleviamo i dati da firebase
         reference.child(userID).addListenerForSingleValueEvent(object : ValueEventListener {
@@ -45,9 +56,8 @@ class PersonFragment : Fragment() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val userProfile: Person? = snapshot.getValue(Person::class.java)
 
-                Toast.makeText(activity, "test "+userProfile.toString(), Toast.LENGTH_LONG).show()
-
                 if(userProfile != null){
+                    currentUser = userProfile
                     val name: String = userProfile.nome
                     val surname: String = userProfile.cognome
                     val email: String = userProfile.email
@@ -55,10 +65,10 @@ class PersonFragment : Fragment() {
 
 
                     greetingsText.text = resources.getString(R.string.welcome) + " " + name
-                    //emailAddress.text = email
-                    //Name.text = name
-                    //Surname.text = surname
-                    //Ruole.text = ruole
+                    emailAddress.text = email
+                    nameText.text = name
+                    surnameText.text = surname
+                    roleText.text = ruole
                 }
             }
 
@@ -67,11 +77,44 @@ class PersonFragment : Fragment() {
 
             }
         })
+
+        squadsReference = FirebaseDatabase.getInstance().getReference("team")
+
+
+        val squads: ArrayList<String> = ArrayList()
+        teamsAdapter = ArrayAdapter(requireContext(), R.layout.team_list_row, squads)
+        Toast.makeText(context, "TEST", Toast.LENGTH_SHORT).show()
+
+        squadsReference.addValueEventListener(object : ValueEventListener {
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+
+                for (postSnapshot in snapshot.children) {
+                    val squad: Team? = postSnapshot.getValue(Team::class.java)
+
+                    if(squad!!.utenti.contains(currentUser))
+                        squads.add(squad!!.nomeSquadra)
+
+                    Log.i("log:: ", squad.nomeSquadra)
+                }
+
+                teamsAdapter.notifyDataSetChanged()
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(activity, "Something wrong happened!", Toast.LENGTH_LONG).show()
+
+            }
+        })
+
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+        teamsList.adapter = teamsAdapter
     }
+
 }

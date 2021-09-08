@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import com.ismaeldivita.chipnavigation.ChipNavigationBar
 import it.insubria.protezionetv.volunteer.ui.home.HomeFragment
 import it.insubria.protezionetv.volunteer.R
+import it.insubria.protezionetv.volunteer.ui.person.PersonFragment
 
 class MainActivity : AppCompatActivity() {
 

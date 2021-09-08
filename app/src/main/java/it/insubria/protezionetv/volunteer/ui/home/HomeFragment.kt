@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import it.insubria.protezionet.common.Event
 import it.insubria.protezionetv.volunteer.R
 import org.json.JSONObject
-import java.util.*
 import it.insubria.protezionetv.volunteer.ui.home.MapFragment as HomeMapFragment
 
 
