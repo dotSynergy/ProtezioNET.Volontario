@@ -106,7 +106,6 @@ class PersonFragment : Fragment() {
         })
 
         teamsAdapter = ArrayAdapter(requireContext(), R.layout.team_list_row, squads)
-        Toast.makeText(context, "TEST", Toast.LENGTH_SHORT).show()
 
         return view
     }
