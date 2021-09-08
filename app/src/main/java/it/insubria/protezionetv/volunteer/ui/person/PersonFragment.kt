@@ -49,6 +49,10 @@ class PersonFragment : Fragment() {
         reference = FirebaseDatabase.getInstance().getReference("person") //rifermento al nodo person da cui leggere
         userID = user.uid
 
+        squadsReference = FirebaseDatabase.getInstance().getReference("team")
+
+        val squads: ArrayList<String> = ArrayList()
+
         // Inflate the layout for this fragment
         //preleviamo i dati da firebase
         reference.child(userID).addListenerForSingleValueEvent(object : ValueEventListener {
@@ -69,6 +73,29 @@ class PersonFragment : Fragment() {
                     nameText.text = name
                     surnameText.text = surname
                     roleText.text = ruole
+
+
+                    squadsReference.addValueEventListener(object : ValueEventListener {
+
+                        override fun onDataChange(snapshot: DataSnapshot) {
+
+                            for (postSnapshot in snapshot.children) {
+                                val squad: Team? = postSnapshot.getValue(Team::class.java)
+
+                                if(squad!!.utenti.contains(currentUser))
+                                    squads.add(squad.nomeSquadra)
+
+                                Log.i("log:: ", squad.nomeSquadra)
+                            }
+
+                            teamsAdapter.notifyDataSetChanged()
+                        }
+
+                        override fun onCancelled(error: DatabaseError) {
+                            Toast.makeText(activity, "Something wrong happened!", Toast.LENGTH_LONG).show()
+
+                        }
+                    })
                 }
             }
 
@@ -78,34 +105,8 @@ class PersonFragment : Fragment() {
             }
         })
 
-        squadsReference = FirebaseDatabase.getInstance().getReference("team")
-
-
-        val squads: ArrayList<String> = ArrayList()
         teamsAdapter = ArrayAdapter(requireContext(), R.layout.team_list_row, squads)
         Toast.makeText(context, "TEST", Toast.LENGTH_SHORT).show()
-
-        squadsReference.addValueEventListener(object : ValueEventListener {
-
-            override fun onDataChange(snapshot: DataSnapshot) {
-
-                for (postSnapshot in snapshot.children) {
-                    val squad: Team? = postSnapshot.getValue(Team::class.java)
-
-                    if(squad!!.utenti.contains(currentUser))
-                        squads.add(squad!!.nomeSquadra)
-
-                    Log.i("log:: ", squad.nomeSquadra)
-                }
-
-                teamsAdapter.notifyDataSetChanged()
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(activity, "Something wrong happened!", Toast.LENGTH_LONG).show()
-
-            }
-        })
 
         return view
     }

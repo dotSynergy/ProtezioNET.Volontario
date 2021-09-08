@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +15,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.*
 import com.google.android.gms.maps.model.LatLng
-import java.util.*
+import kotlin.math.ln
 
 class MapFragment : Fragment(), OnMapReadyCallback {
 
@@ -30,13 +31,12 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         lng: Double
     ): MapFragment {
         val args = Bundle()
-        this.lat = lat
-        this.lng = lng
-        args.putDouble("lat", lat)
-        args.putDouble("lng", lng)
-        val fragment: MapFragment =
-            MapFragment()
-        fragment.arguments = args
+
+        Log.i("addr:", lat.toString())
+        Log.i("addr:", lng.toString())
+        val fragment = MapFragment()
+        fragment.lat = lat
+        fragment.lng = lng
         return fragment
     }
 
