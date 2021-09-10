@@ -9,7 +9,9 @@
         <entry key="app/src/main/common-res/layout/row_add_team_member.xml" value="0.15625" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.11510416666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.11510416666666666" />
+        <entry key="app/src/main/res/layout/fragment_equipment_list.xml" value="0.21331521739130435" />
         <entry key="app/src/main/res/layout/fragment_person.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_truck_list.xml" value="0.21331521739130435" />
         <entry key="app/src/main/res/layout/team_list_row.xml" value="0.22" />
       </map>
     </option>

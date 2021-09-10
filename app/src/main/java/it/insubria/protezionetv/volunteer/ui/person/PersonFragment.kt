@@ -34,6 +34,7 @@ class PersonFragment : Fragment() {
     private lateinit var currentUser: Person
 
     private lateinit var teamsAdapter: ArrayAdapter<String>
+    private lateinit var myTeamsAdapter: ArrayAdapter<String>
 
 
     private lateinit var userID: String
@@ -52,6 +53,7 @@ class PersonFragment : Fragment() {
         squadsReference = FirebaseDatabase.getInstance().getReference("team")
 
         val squads: ArrayList<String> = ArrayList()
+        val mySquads: ArrayList<String> = ArrayList()
 
         // Inflate the layout for this fragment
         //preleviamo i dati da firebase
@@ -82,10 +84,13 @@ class PersonFragment : Fragment() {
                             for (postSnapshot in snapshot.children) {
                                 val squad: Team? = postSnapshot.getValue(Team::class.java)
 
-                                if(squad!!.utenti.contains(currentUser))
+                                if (squad != null) {
                                     squads.add(squad.nomeSquadra)
+                                    if(squad!!.utenti.contains(currentUser))
+                                        mySquads.add(squad.nomeSquadra)
 
-                                Log.i("log:: ", squad.nomeSquadra)
+                                    Log.i("log:: ", squad.nomeSquadra)
+                                }
                             }
 
                             teamsAdapter.notifyDataSetChanged()
@@ -106,6 +111,7 @@ class PersonFragment : Fragment() {
         })
 
         teamsAdapter = ArrayAdapter(requireContext(), R.layout.team_list_row, squads)
+        myTeamsAdapter = ArrayAdapter(requireContext(), R.layout.team_list_row, mySquads)
 
         return view
     }
@@ -113,8 +119,8 @@ class PersonFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         teamsList.adapter = teamsAdapter
+        myTeamsList.adapter = myTeamsAdapter
     }
 
 }

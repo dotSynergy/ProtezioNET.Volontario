@@ -15,4 +15,5 @@
 
     <string name="google_maps_key">AIzaSyC5TbQEKG6oWBWclm2pEbc848AH5I2POy8</string>
     <string name="squads">Squads</string>
+    <string name="mysquads">My Squads</string>
 </resources>

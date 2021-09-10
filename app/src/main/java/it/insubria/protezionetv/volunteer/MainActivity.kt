@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import com.ismaeldivita.chipnavigation.ChipNavigationBar
 import it.insubria.protezionetv.volunteer.ui.home.HomeFragment
 import it.insubria.protezionetv.volunteer.R
+import it.insubria.protezionetv.volunteer.ui.equipment.EquipmentFragment
 import it.insubria.protezionetv.volunteer.ui.person.PersonFragment
+import it.insubria.protezionetv.volunteer.ui.truck.TruckFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,9 +31,8 @@ class MainActivity : AppCompatActivity() {
                 when (i) {
                     R.id.nav_home -> fragment = HomeFragment()
                     R.id.nav_person -> fragment = PersonFragment()
-                    //R.id.nav_event -> fragment = EventFragment()
-                    //R.id.nav_truck -> fragment = TruckFragment()
-                    //R.id.nav_equipment -> fragment = EquipmentFragment()
+                    R.id.nav_truck -> fragment = TruckFragment()
+                    R.id.nav_equipment -> fragment = EquipmentFragment()
                 }
                 if (fragment != null) {
                     supportFragmentManager.beginTransaction().replace(R.id.container, fragment!!).commit()

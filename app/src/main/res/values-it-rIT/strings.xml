@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">ProtezioNET.Volontario</string>
     <string name="squads">Squads</string>
+    <string name="mysquads">My Squads</string>
 </resources>
