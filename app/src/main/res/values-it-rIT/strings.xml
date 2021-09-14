@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ProtezioNET.Volontario</string>
-    <string name="squads">Squads</string>
-    <string name="mysquads">My Squads</string>
+    <string name="squads">Squadre</string>
+    <string name="mysquads">Le Mie Squadre</string>
+    <string name="trucks">Mezzi</string>
+    <string name="wear">Usura</string>
+    <string name="equipment">Equipment</string>
 </resources>
